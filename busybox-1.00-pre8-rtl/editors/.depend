@@ -1,0 +1,23 @@
+awk.o: awk.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/awk/math.h)
+patch.o: patch.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+sed.o: sed.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+vi.o: vi.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/locale/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/optimize/cursor.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/use/signals.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/crashme.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/dot/cmd.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/yankmark.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/readonly.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/search.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/colon.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/win/resize.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/setopts.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/vi/set.h)

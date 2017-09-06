@@ -1,0 +1,40 @@
+adjtimex.o: adjtimex.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+crond.o: crond.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/crond/call/sendmail.h)
+crontab.o: crontab.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+dc.o: dc.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+devfsd.o: devfsd.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/devfsd/modload.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/devfsd/verbose.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/debug.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/devfsd/fg/np.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/file.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/modules/devfs.h)
+hdparm.o: hdparm.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/get/identity.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/hdio/getset/dma.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/hdio/unregister/hwif.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/hdio/scan/hwif.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/hdio/tristate/hwif.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/hdparm/hdio/drive/reset.h)
+last.o: last.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+makedevs.o: makedevs.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+mt.o: mt.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+rx.o: rx.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+strings.o: strings.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+time.o: time.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+watchdog.o: watchdog.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)

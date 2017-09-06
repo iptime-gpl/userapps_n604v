@@ -1,0 +1,14 @@
+klogd.o: klogd.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+logger.o: logger.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/syslogd.h)
+logread.o: logread.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/logread/reduced/locking.h)
+syslogd.o: syslogd.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/rotate/logfile.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/remote/log.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/ipc/syslog.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/ipc/syslog/buffer/size.h)

@@ -1,0 +1,64 @@
+ash.o: ash.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/job/control.h) \
+ cmdedit.h $(dep_cmdedit.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/alias.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/optimize/for/size.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/math/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/cmdcmd.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/getopts.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/extra/quiet.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash/mail.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/locale/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/savehistory.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/editing.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/applets/always/win.h)
+cmdedit.o: cmdedit.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ ../shell/cmdedit.h $(dep_../shell/cmdedit.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/locale/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/tab/completion.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/editing.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/username/completion.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/getusername/and/homedir.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/history.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/nonprintable/inverse/put.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/savehistory.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+dep_cmdedit.h += \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/ash.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/savehistory.h)
+hush.o: hush.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ cmdedit.h $(dep_cmdedit.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/editing.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/applets/always/win.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/extra/quiet.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+lash.o: lash.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ cmdedit.h $(dep_cmdedit.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/locale/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/lash/pipe/n/redirects.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/lash/job/control.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/editing.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/applets/always/win.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/extra/quiet.h)
+msh.o: msh.c \
+ cmdedit.h $(dep_cmdedit.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/command/editing.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/fancy/prompt.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/standalone/shell.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/sh/applets/always/win.h)

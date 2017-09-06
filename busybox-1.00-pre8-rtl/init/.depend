@@ -1,0 +1,32 @@
+halt.o: halt.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ init_shared.h $(dep_init_shared.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/init.h)
+init.o: init.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/syslogd.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/init/coredumps.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/use/inittab.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/linuxrc.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/extra/quiet.h)
+init_shared.o: init_shared.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ init_shared.h $(dep_init_shared.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/initrd.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/init.h)
+mesg.o: mesg.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+minit.o: minit.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+msvc.o: msvc.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+pidfilehack.o: pidfilehack.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+poweroff.o: poweroff.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ init_shared.h $(dep_init_shared.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/init.h)
+reboot.o: reboot.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ init_shared.h $(dep_init_shared.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/init.h)

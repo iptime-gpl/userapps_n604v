@@ -1,0 +1,48 @@
+ar.o: ar.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+bunzip2.o: bunzip2.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+cpio.o: cpio.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+dpkg.o: dpkg.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/bz2.h)
+dpkg_deb.o: dpkg_deb.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/bz2.h)
+gunzip.o: gunzip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/gunzip/uncompress.h)
+gzip.o: gzip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/gunzip.h)
+rpm.o: rpm.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+rpm2cpio.o: rpm2cpio.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+tar.o: tar.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/create.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/from.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/gzip.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/compress.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/bzip2.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/long/options.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+uncompress.o: uncompress.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+unzip.o: unzip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)

@@ -1,0 +1,58 @@
+PROJECT_ID := nvrtl_wl
+# BOOTLOADER_DIR := 
+USE_LOCAL_BUSYBOX:=y
+BUSYBOX_DIR:=busybox-1.00-pre8-rtl
+REAL_KERNEL_PATH:=../linux-2.4.18_rtl
+
+include $(USERAPPS_ROOT)/configs/rtl8196c/menu_wireless_router_efm
+include $(USERAPPS_ROOT)/configs/rtl8196c/common_config
+include $(USERAPPS_ROOT)/configs/rtl8196c/apps_config
+-include $(USERAPPS_ROOT)/lang_config
+
+CPU_ID:=rtl8196b
+IF_WAN:=\"eth1\"
+IF_LAN:=\"eth0\"
+IF_LAN_PHY:=\"eth0\"
+IF_LOCAL:=\"br0\"
+IF_WIRELESS:=\"wlan0\"
+IF_WIRELESS_DEFAULT:=\"wlan0\"
+
+
+ifeq ($(USE_MULTI_BRIDGE_SUPPORT),y)
+IF_WWAN:=\"wlan0-vxd\"
+endif
+
+# dummy
+IF_WAN2:=\"eth3\"
+
+ifeq ($(KOREAN_SUPPORT),y)
+USE_ISPFAKE:=y
+endif
+
+RTL_SDK_VERSION:=R1.4
+USE_UI2:=y
+USE_SAVE_INFO:=y
+USE_11N_SUPPORT:=y
+USE_TKIPAES:=y
+
+USE_WPS:=y
+USE_WPS_BUTTON:=y
+USE_4X_BSSID:=y
+USE_WPS_RESTART_SIGNAL:=n
+# USE_WPS_NOTIFICATION:=y
+
+USE_ATED:=y
+
+-include $(USERAPPS_ROOT)/misc_config
+-include $(USERAPPS_ROOT)/oem_config
+
+ifeq ($(USE_WIRELESS_CGI),y)
+USE_GEN_SCHEDULER:=y
+USE_WIFI_SCHEDULER:=y
+USE_WIRELESSCONF_ADVANCED2:=y
+USE_DYNAMIC_CHANNEL_SEARCH:=y
+USE_SET_AUTO_CHANNEL_BY_EFMALG:=y
+endif
+USE_OLD_RTL_HWPARAM:=y
+USE_NEW_MAC_SCHEME:=y
+USE_WIRELESS_TOOLS:=y

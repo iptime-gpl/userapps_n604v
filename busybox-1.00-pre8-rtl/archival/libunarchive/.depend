@@ -1,0 +1,84 @@
+archive_xread_all.o: archive_xread_all.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+archive_xread_all_eof.o: archive_xread_all_eof.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+check_header_gzip.o: check_header_gzip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+data_align.o: data_align.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+data_extract_all.o: data_extract_all.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+data_extract_to_buffer.o: data_extract_to_buffer.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+data_extract_to_stdout.o: data_extract_to_stdout.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+data_skip.o: data_skip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+decompress_bunzip2.o: decompress_bunzip2.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+filter_accept_all.o: filter_accept_all.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+filter_accept_list.o: filter_accept_list.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+filter_accept_list_reassign.o: filter_accept_list_reassign.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/gz.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/deb/tar/bz2.h)
+filter_accept_reject_list.o: filter_accept_reject_list.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+find_list_entry.o: find_list_entry.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+get_header_ar.o: get_header_ar.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/ar/long/filenames.h)
+get_header_cpio.o: get_header_cpio.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+get_header_tar.o: get_header_tar.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/gnu/extensions.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/tar/oldgnu/compatability.h)
+get_header_tar_bz2.o: get_header_tar_bz2.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+get_header_tar_gz.o: get_header_tar_gz.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+header_list.o: header_list.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+header_skip.o: header_skip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+header_verbose_list.o: header_verbose_list.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+init_handle.o: init_handle.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)
+open_transformer.o: open_transformer.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+seek_by_char.o: seek_by_char.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+seek_by_jump.o: seek_by_jump.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/unarchive/tape.h)
+uncompress.o: uncompress.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/config.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/config.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h)
+unpack_ar_archive.o: unpack_ar_archive.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+unzip.o: unzip.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/config.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/config.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/unarchive.h)

@@ -1,0 +1,9 @@
+cp_mv_stat.o: cp_mv_stat.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ coreutils.h $(dep_coreutils.h)
+getopt_mk_fifo_nod.o: getopt_mk_fifo_nod.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ coreutils.h $(dep_coreutils.h)
+xgetoptfile_sort_uniq.o: xgetoptfile_sort_uniq.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/libbb.h) \
+ coreutils.h $(dep_coreutils.h)

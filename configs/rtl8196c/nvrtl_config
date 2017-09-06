@@ -1,0 +1,34 @@
+PROJECT_ID := nvrtl
+# BOOTLOADER_DIR := 
+USE_LOCAL_BUSYBOX:=y
+BUSYBOX_DIR:=busybox-1.00-pre8-rtl
+REAL_KERNEL_PATH:=../linux-2.4.18_rtl
+
+include $(USERAPPS_ROOT)/configs/rtl8196c/menu_wireless_router_efm
+include $(USERAPPS_ROOT)/configs/rtl8196c/common_config
+include $(USERAPPS_ROOT)/configs/rtl8196c/apps_config
+-include $(USERAPPS_ROOT)/lang_config
+-include $(USERAPPS_ROOT)/misc_config
+
+CPU_ID:=rtl8196b
+IF_WAN:=\"eth1\"
+IF_LAN:=\"eth0\"
+IF_LAN_PHY:=\"eth0\"
+IF_LOCAL:=\"br0\"
+IF_WIRELESS:=\"wlan0\"
+
+
+ifeq ($(USE_MULTI_BRIDGE_SUPPORT),y)
+IF_WWAN:=\"wlan0-vxd\"
+endif
+
+# dummy
+IF_WAN2:=\"eth3\"
+
+#ifeq ($(KOREAN_SUPPORT),y)
+#USE_ISPFAKE:=y
+#endif
+
+RTL_SDK_VERSION:=R1.4
+USE_UI2:=y
+USE_SAVE_INFO:=y

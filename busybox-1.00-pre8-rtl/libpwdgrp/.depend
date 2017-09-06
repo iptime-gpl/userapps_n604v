@@ -1,0 +1,45 @@
+__getgrent.o: __getgrent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+__getpwent.o: __getpwent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h)
+fgetgrent.o: fgetgrent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+fgetpwent.o: fgetpwent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+getgrgid.o: getgrgid.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+getgrnam.o: getgrnam.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+getpw.o: getpw.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+getpwnam.o: getpwnam.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+getpwuid.o: getpwuid.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+grent.o: grent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+initgroups.o: initgroups.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+putpwent.o: putpwent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+pwent.o: pwent.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h)
+setgroups.o: setgroups.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h)
+shadow.o: shadow.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/shadow_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/shadow_.h)

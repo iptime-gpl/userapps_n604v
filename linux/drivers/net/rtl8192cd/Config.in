@@ -1,0 +1,57 @@
+#
+# Wireless LAN device configuration
+#
+
+tristate '  RTL8192C/D 802.11b/g/n support' CONFIG_RTL8192CD
+
+if [ "$CONFIG_RTL8192CD" != "n" ]; then
+	bool '    Support Auto Scan PCIE PHY clock' CONFIG_AUTO_PCIE_PHY_SCAN
+	bool '    Support 40MHz clock source' CONFIG_PHY_EAT_40MHZ
+	bool '    RTL8188Re/RTL8192Ce'	CONFIG_RTL_92C_SUPPORT
+	bool '    RTL8188ER'	CONFIG_RTL_88E_SUPPORT
+	bool '    RTL8192EE'	CONFIG_RTL_8192EE
+	bool '    Private skb buffer management' CONFIG_RTL8190_PRIV_SKB
+
+	if [ $CONFIG_RTL_88E_SUPPORT -o $CONFIG_RTL_8192EE ]; then
+		bool '    Enable outsource dynamic mechanism driver'        CONFIG_RTL_ODM_WLAN_DRIVER
+	fi
+
+	if [ "$CONFIG_RTL_88E_SUPPORT" = "n" ]; then
+		bool '    WAPI support' CONFIG_RTL_WAPI_SUPPORT
+		if [ "$CONFIG_RTL_WAPI_SUPPORT" = "y" ]; then
+			bool '      support local AS' CONFIG_RTL_WAPI_LOCAL_AS_SUPPORT
+			#bool '      enable WAPI module' CONFIG_RTL_WAPI_MODULE_SUPPORT
+			#bool '      dynamic IRAM mapping for WAPI' CONFIG_RTL_DYNAMIC_IRAM_MAPPING_FOR_WAPI
+		fi
+	fi
+	
+	if [ "$CONFIG_RTL_8192EE" = "y" ]; then
+		define_bool CONFIG_WLAN_HAL y
+		define_bool CONFIG_WLAN_HAL_88XX y
+		define_bool CONFIG_WLAN_HAL_8192EE y
+		define_bool CONFIG_USE_PCIE_SLOT_0 y
+	fi
+
+	bool '    Client Mode support' CONFIG_RTL_CLIENT_MODE_SUPPORT
+	if [ "$CONFIG_RTL_CLIENT_MODE_SUPPORT" = "y" ]; then
+		bool '    Repeater Mode support' CONFIG_RTL_REPEATER_MODE_SUPPORT
+	fi
+	if [ "$CONFIG_RTL_88E_SUPPORT" = "n" ]; then
+		bool '    Mesh Mode support' CONFIG_MESH_ENABLE
+		if [ "$CONFIG_MESH_ENABLE" = "y" ]; then
+            		dep_bool '        Enable Mesh NMS' CONFIG_NMS $CONFIG_MESH_ENABLE
+			#   bool 'Test Package(netperf, test_traffic ...)' CONFIG_TEST_PKG
+			#   bool 'Enable 11s Test Mode' CONFIG_11S_TEST_MODE
+		fi
+	fi
+        bool '    WDS Support' CONFIG_RTL_WDS_SUPPORT
+	bool '    Virtual AP Support' CONFIG_RTL_VAP_SUPPORT
+	if [ "$CONFIG_RTL_88E_SUPPORT" = "n" ]; then
+		bool '    Efuse Support' CONFIG_ENABLE_EFUSE
+	fi
+	bool '    Config File support' CONFIG_RTL_COMAPI_CFGFILE
+        dep_bool '    Wireless Tools v29 support' CONFIG_RTL_COMAPI_WLTOOLS $CONFIG_WIRELESS_EXT_V18
+
+	bool "Realtek wps2.0 support " CONFIG_RTL_WPS2_SUPPORT		
+fi
+

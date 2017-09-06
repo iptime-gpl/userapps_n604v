@@ -1,0 +1,9 @@
+/toolchain/rsdk-96c/linux/mips-linux-ld -static -T arch/mips/ld.script arch/mips/kernel/head.o arch/mips/kernel/init_task.o init/main.o init/version.o \
+        --start-group \
+        arch/mips/kernel/kernel.o arch/mips/mm/mm.o kernel/kernel.o mm/mm.o fs/fs.o ipc/ipc.o arch/mips/realtek/rtl8196b/rtl8196b.o \
+        --end-group \
+        -o vmlinux
+       # net/network.o \
+       # arch/mips/lib/lib.a /home/rtlwl/rtl8196c/rtl8196c-sdk_1.2/rtl8196c-linux-1.2/linux-2.4.18.1.2f_patch/lib/lib.a \
+        # drivers/char/char.o drivers/block/block.o drivers/misc/misc.o drivers/net/net.o drivers/media/media.o drivers/mtd/mtdlink.o drivers/net/rtl8192cd/rtl8192cd.o drivers/net/rtl865x/rtl865x.o \
+

@@ -1,0 +1,19 @@
+applets.o: applets.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/applets.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/applets.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/suid.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/suid/config.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/pwd_.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/grp_.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/suid/config/quiet.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/file.h)
+busybox.o: busybox.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/locale/support.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/installer.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/init.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/autowidth.h)
+usage.o: usage.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/usage.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/usage.h) \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/applets.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/applets.h)

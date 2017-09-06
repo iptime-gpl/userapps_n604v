@@ -1,0 +1,31 @@
+insmod.o: insmod.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/2/4/modules.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/2/2/modules.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/2/6/modules.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/insmod/loadinkmem.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/insmod/version/checking.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/use/list.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/list/archtype.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/use/single.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/use/plt/entries.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/use/got/entries.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/use/plt/list.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/got/entry/size.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/plt/entry/size.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/check/tainted/module.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/insmod/ksymoops/symbols.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/insmod/load/map.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/insmod/load/map/full.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+lsmod.o: lsmod.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/check/tainted/module.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/query/module/interface.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
+modprobe.o: modprobe.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/2/6/modules.h)
+rmmod.o: rmmod.c \
+ /home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h $(dep_/home/rtlwl/userapps/busybox-1.00-pre8-rtl/include/busybox.h) \
+   $(wildcard /home/rtlwl/userapps/busybox-1.00-pre8-rtl/config/feature/clean/up.h)
