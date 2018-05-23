@@ -14,7 +14,7 @@ UPNP_TARGET = /toolchain/rsdk-96c/mipsel-linux-uclibc
 include $(USERAPPS_ROOT)/config
 include $(USERAPPS_ROOT)/cflags.mk
 
-KERNEL_PATH := $(USERAPPS_ROOT)/linux
+#KERNEL_PATH := $(USERAPPS_ROOT)/linux
 USERLAND_LIB := -L$(USERAPPS_ROOT)/lib/ul_lib -luserland -lcrypt
-# CGI_LIB := -L$(USERAPPS_ROOT)/lib/ul_lib -L$(USERAPPS_ROOT)/lib -L$(USERAPPS_ROOT)/rtl_app/lib -lcgi -luserland -lm -lcrypt -lrtl 
+# CGI_LIB := -L$(USERAPPS_ROOT)/lib/ul_lib -L$(USERAPPS_ROOT)/lib -L$(USERAPPS_ROOT)/rtl_app/install/lib -lcgi -luserland -lm -lcrypt -lrtl 
 CGI_LIB := -L$(USERAPPS_ROOT)/lib/ul_lib -L$(USERAPPS_ROOT)/lib -L$(USERAPPS_ROOT)/rtl_app/install/lib -lcgi -luserland -lcrypt -lrtl 

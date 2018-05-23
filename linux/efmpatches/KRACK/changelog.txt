@@ -1,0 +1,29 @@
+Date:
+  2017/10/19
+
+Author:
+  Jeng-Wei LEE
+
+Issue:
+  Key Reinstallation Attacks: Forcing Nonce Reuse in WPA2
+
+Description:
+  Common Vulnerabilities and Exposures (CVE) identifiers announced by WiFi Alliance were assigned to track 
+  which products are affected by specific instantiations of the key reinstallation attack:
+  
+  CVE-2017-13077: Reinstallation of the pairwise encryption key (PTK-TK) in the 4-way handshake.
+	CVE-2017-13078: Reinstallation of the group key (GTK) in the 4-way handshake.
+	CVE-2017-13079: Reinstallation of the integrity group key (IGTK) in the 4-way handshake.
+	CVE-2017-13080: Reinstallation of the group key (GTK) in the group key handshake.
+	CVE-2017-13081: Reinstallation of the integrity group key (IGTK) in the group key handshake.
+	CVE-2017-13082: Accepting a retransmitted Fast BSS Transition (FT) Reassociation Request and reinstalling the pairwise encryption key (PTK-TK) while processing it.
+	CVE-2017-13084: Reinstallation of the STK key in the PeerKey handshake.
+	CVE-2017-13086: reinstallation of the Tunneled Direct-Link Setup (TDLS) PeerKey (TPK) key in the TDLS handshake.
+	CVE-2017-13087: reinstallation of the group key (GTK) when processing a Wireless Network Management (WNM) Sleep Mode Response frame.
+	CVE-2017-13088: reinstallation of the integrity group key (IGTK) when processing a Wireless Network Management (WNM) Sleep Mode Response frame.
+
+	test result:
+	CVE-2017-13077 ~ CVE-2017-13079: test pass, don't need patch.
+	CVE-2017-13080 ~ CVE-2017-13081: test fail, need this patch.
+	CVE-2017-13082                 : test pass, don't need patch.
+	CVE-2017-13084 ~ CVE-2017-13088: protocol is not support in RTK WiFi Driver.

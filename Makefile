@@ -1,4 +1,4 @@
-SUBDIRS:=wireless_tools lib/ul_lib busybox-1.00-pre8-rtl udhcp-0.9.8 boa-0.94.13/src iptables-1.2.7a ppp-2.4.2/pppd ppp-2.4.2/pppd/plugins/rp-pppoe poptop-1.1.4 bridge-utils/libbridge bridge-utils/brctl miniupnpd-20090605 smtpclient igmpproxy.rtl captcha miniupnpc-1.6
+SUBDIRS:=wireless_tools lib/ul_lib busybox-1.00-pre8-rtl udhcp-0.9.8 boa-0.94.13/src iptables-1.2.7a poptop-1.1.4 bridge-utils/libbridge bridge-utils/brctl miniupnpd-20090605 smtpclient igmpproxy.rtl captcha miniupnpc-1.6
 
 PHONY := all $(SUBDIRS)
 all: $(SUBDIRS)
